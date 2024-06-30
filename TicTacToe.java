@@ -11,7 +11,6 @@ public class TicTacToe {
         new TicTac();
     }
 }
-
 class TicTac implements ActionListener {
     JFrame frame = new JFrame("TIC_TAC");
     JPanel panel = new JPanel();
@@ -96,7 +95,6 @@ class TicTac implements ActionListener {
         if (button[7].getText() == "O" && button[5].getText() == "O" && button[3].getText() == "O") {
             yWins(7, 5, 3);
         }
-
     }
 
     public void xWins(int a, int b, int c) {
@@ -118,7 +116,6 @@ class TicTac implements ActionListener {
         }
         label.setText("O Wins...");
     }
-
     public void hii() throws InterruptedException {
         Thread.sleep(2000);
         if (random.nextInt(2) == 1) {
@@ -129,7 +126,6 @@ class TicTac implements ActionListener {
             label.setText("O Turns");
         }
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
 
@@ -162,6 +158,5 @@ class TicTac implements ActionListener {
                 }
             }
         }
-
     }
 }
